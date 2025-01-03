@@ -12,6 +12,7 @@ This is a responsive portfolio website built using **React**, **Vite**, and **Ta
 - **Effortless Deployment**: Deployed to GitHub Pages with an automated process.
 
 ---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -28,44 +29,42 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/CodeChill23/MyPortfolio.git
    cd MyPortfolio
-
+   
 2. Install dependencies:
 
- ```bash
-npm install
-# or
-yarn install```
+   ```bash
+   npm install
 
 3. Start the development server:
 
- ```bash
-npm run dev
-# or
-yarn dev```
-
-Open http://localhost:5173 in your browser to see the app.
+   ```bash
+   npm run dev
 
 ---
+
 ## 🖌️ Customization
-Edit Components: Modify the src/components folder to customize the sections.
-Update Images: Replace images in the public/ folder with your own.
+-Edit Components: Modify the src/components folder to customize the sections.
+-Update Images: Replace images in the public/ folder with your own.
+
 
 ---
-##🤝 Contribution
+
+## 🤝 Contribution
 Contributions are welcome! Feel free to fork this repo and submit a pull request. For major changes, please open an issue first.
 
-
 ---
-##⭐ Acknowledgments
+
+## ⭐ Acknowledgments
 Special thanks to the open-source community and the creators of React, Vite, and Tailwind CSS.
 
-📝 Contact
+---
+
+##  📝 Contact
+Special thanks to the open-source community and the creators of React, Vite, and Tailwind CSS.
+
 For questions, suggestions, or feedback:
+
 GitHub: CodeChill23
 YouTube: Code & Chill
 TikTok: @CodeChill23
-
 Don’t forget to ⭐ this repository if you find it helpful!
-
-
-
