@@ -64,7 +64,9 @@ Special thanks to the open-source community and the creators of React, Vite, and
 
 For questions, suggestions, or feedback:
 
-GitHub: CodeChill23
-YouTube: Code & Chill
-TikTok: @CodeChill23
+
+YouTube:[ Code & Chill](https://youtu.be/-1i87q_H4lg?si=dBm_KSQ26pNiNReX)
+
+TikTok: [@CodeChill23](https://www.tiktok.com/@codechill23)
+
 Don’t forget to ⭐ this repository if you find it helpful!
