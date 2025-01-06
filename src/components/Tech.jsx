@@ -1,114 +1,146 @@
 import {
-    BiLogoAngular,
-    BiLogoBootstrap,
-    BiLogoCss3,
-    BiLogoDocker,
-    BiLogoGithub,
-    BiLogoGitlab,
-    BiLogoHtml5,
-    BiLogoJava,
-    BiLogoJavascript,
-    BiLogoMongodb,
-    BiLogoPostgresql,
-    BiLogoReact,
-    BiLogoSass,
-    BiLogoSpringBoot,
-    BiLogoTailwindCss,
-    BiLogoTypescript,
-  } from "react-icons/bi";
-  import { DiJenkins } from "react-icons/di";
-  import { SiJira } from "react-icons/si";
-  import { SiSonarqube } from "react-icons/si";
-  import { SiExpress } from "react-icons/si";
-  import { SiDotnet } from "react-icons/si";
-  import {motion} from "framer-motion"
-  
-  import Reveal from "./Reveal";
-  
-  const skills = [
-    {
-      category: "Frontend",
-      technologies: [
-        { name: "HTML", icon: <BiLogoHtml5 className="text-orange-600" /> },
-        { name: "CSS", icon: <BiLogoCss3 className="text-blue-600" /> },
-        { name: "Sass", icon: <BiLogoSass className="text-pink-600" /> },
-        { name: "Bootstrap", icon: <BiLogoBootstrap className="text-purple-600" /> },
-        { name: "Tailwind CSS", icon: <BiLogoTailwindCss className="text-teal-500" /> },
-        { name: "JavaScript", icon: <BiLogoJavascript className="text-yellow-500" /> },
-        { name: "TypeScript", icon: <BiLogoTypescript className="text-blue-500" /> },
-        { name: "React", icon: <BiLogoReact className="text-cyan-500" /> },
-        { name: "Angular", icon: <BiLogoAngular className="text-red-500" /> },
-      ],
-    },
-    {
-      category: "Backend",
-      technologies: [
-        { name: "MongoDB", icon: <BiLogoMongodb className="text-green-600" /> },
-        { name: "PostgreSQL", icon: <BiLogoPostgresql className="text-blue-700" /> },
-        { name: "Java", icon: <BiLogoJava className="text-orange-700" /> },
-        { name: "ExpressJs", icon: <SiExpress className="text-gray-600" /> },
-        { name: "Spring Boot", icon: <BiLogoSpringBoot className="text-green-600" /> },
-        { name: "Dotnet", icon: <SiDotnet className="text-blue-600" /> },
-      ],
-    },
-    {
-      category: "Infrastructure & Collaboration",
-      technologies: [
-        { name: "Jira", icon: <SiJira className="text-blue-600" /> },
-        { name: "Docker", icon: <BiLogoDocker className="text-blue-500" /> },
-        { name: "Sonarqube", icon: <SiSonarqube className="text-blue-800" /> },
-        { name: "Jenkins", icon: <DiJenkins className="text-green-500" /> },
-        { name: "GitHub", icon: <BiLogoGithub className="text-gray-600" /> },
-        { name: "GitLab", icon: <BiLogoGitlab className="text-orange-600" /> },
-      ],
-    },
-  ];
-  
-  const Tech = () => {
-    return (
-      <div id="tech">
-   <div
-        className="max-w-[900px] mx-auto flex flex-col justify-center px-4 text-gray-200 pb-8 md:py-12"
-      >
-          <motion.div
-              initial={{y:-50, opacity:0}}
-              animate={{y:0,opacity:1}}
-              transition={{duration:0.8,delay:0.2}}
-              >
-        <Reveal>
-          <h1 className="text-4xl font-semibold mb-8 text-center">Technologies</h1>
-          <p className="text-center mb-8">
-            I have experience working with various technologies across frontend, backend, DevOps, and project management tools.
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoJavascript,
+  BiLogoReact,
+  BiLogoBootstrap,
+  BiLogoTailwindCss,
+  BiLogoGithub,
+  BiLogoGitlab,
+} from "react-icons/bi";
+import { SiFigma, SiAdobeillustrator } from "react-icons/si";
+import { motion } from "framer-motion";
+
+// Custom Photoshop Icon (SVG)
+const PhotoshopIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    fill="#31A8FF"
+    style={{ width: "32px", height: "32px" }}
+  >
+    <rect width="32" height="32" rx="6" fill="#001E36" />
+    <text
+      x="8"
+      y="22"
+      fill="white"
+      fontFamily="Arial, Helvetica, sans-serif"
+      fontWeight="bold"
+      fontSize="16"
+    >
+      Ps
+    </text>
+  </svg>
+);
+
+const skills = [
+  {
+    category: "Frontend",
+    technologies: [
+      {
+        name: "HTML",
+        icon: <BiLogoHtml5 className="text-4xl text-orange-600" />,
+      },
+      { name: "CSS", icon: <BiLogoCss3 className="text-4xl text-blue-600" /> },
+      {
+        name: "Bootstrap",
+        icon: <BiLogoBootstrap className="text-4xl text-purple-600" />,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: <BiLogoTailwindCss className="text-4xl text-teal-500" />,
+      },
+      {
+        name: "JavaScript",
+        icon: <BiLogoJavascript className="text-4xl text-yellow-500" />,
+      },
+      {
+        name: "React",
+        icon: <BiLogoReact className="text-4xl text-cyan-500" />,
+      },
+    ],
+  },
+  {
+    category: "Design",
+    technologies: [
+      {
+        name: "Figma",
+        icon: <SiFigma className="text-[#F24E1E] text-4xl" />,
+      },
+      {
+        name: "Photoshop",
+        icon: <PhotoshopIcon />,
+      },
+      {
+        name: "Adobe Illustrator",
+        icon: (
+          <SiAdobeillustrator style={{ color: "#FF9A00", fontSize: "32px" }} />
+        ),
+      },
+    ],
+  },
+  {
+    category: "Infrastructure & Collaboration",
+    technologies: [
+      {
+        name: "GitHub",
+        icon: <BiLogoGithub className="text-4xl text-gray-600" />,
+      },
+      {
+        name: "GitLab",
+        icon: <BiLogoGitlab className="text-4xl text-orange-600" />,
+      },
+    ],
+  },
+];
+
+const Tech = () => {
+  return (
+    <div id="tech">
+      <div className="flex flex-col justify-center max-w-screen-xl px-6 mx-auto text-gray-200">
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <h1 className="mb-12 text-5xl font-semibold text-center text-white">
+            Technologies I've Worked With
+          </h1>
+          <p className="mb-12 text-lg text-center md:text-xl">
+            I have hands-on experience working with a range of technologies in
+            the frontend, design, and collaboration spaces.
           </p>
-  
-          <div className="space-y-8">
-            
+
+          <div className="space-y-12">
+            {/* Frontend Section */}
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="border border-purple-900 p-6 rounded-lg bg-purple-900/20 shadow-lg"
+                className="p-8 border border-purple-800 shadow-xl rounded-xl bg-purple-900/30"
               >
-                <h3 className="text-xl font-bold mb-4 text-center">{skill.category}</h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <h3 className="mb-6 text-3xl font-bold text-center text-white">
+                  {skill.category}
+                </h3>
+
+                {/* Centered and Justified Technologies */}
+                <div className="flex flex-wrap items-center justify-center space-x-12">
                   {skill.technologies.map((tech, idx) => (
                     <div
                       key={idx}
-                      className="flex items-center space-x-2 bg-purple-800/10 p-3 rounded-lg shadow-md"
+                      className="flex flex-col items-center p-4 space-y-3 transition duration-300 ease-in-out rounded-lg shadow-lg bg-purple-800/20 hover:bg-purple-800/30"
                     >
-                      <span className="text-2xl">{tech.icon}</span>
-                      <span>{tech.name}</span>
+                      <span className="text-4xl">{tech.icon}</span>
+                      <span className="text-xl font-medium">{tech.name}</span>
                     </div>
                   ))}
                 </div>
               </div>
             ))}
           </div>
-        </Reveal>
         </motion.div>
       </div>
-      </div>
-     
-    );
-  };
-  
-  export default Tech;
+    </div>
+  );
+};
+
+export default Tech;
