@@ -59,15 +59,3 @@ Special thanks to the open-source community and the creators of React, Vite, and
 
 ---
 
-##  📝 Contact
-Special thanks to the open-source community and the creators of React, Vite, and Tailwind CSS.
-
-For questions, suggestions, or feedback:
-
-
-YouTube:[ Code & Chill](https://youtu.be/-1i87q_H4lg?si=dBm_KSQ26pNiNReX)
-
-TikTok: [@CodeChill23](https://www.tiktok.com/@codechill23)
-
-Don’t forget to ⭐ this repository if you find it helpful!
-# portfolio
